@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ovi — Portfolio Cinta</title>
+  <meta name="description" content="Portfolio personal untuk Ovi — tema laut & pink, lengkap dengan GUI Lover popup, animasi, dan background gelembung & ikan." />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav-wrap">
+    <nav class="nav" role="navigation" aria-label="Utama">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="brand-text">Untuk Ovi</div>
+      </div>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang</a>
+        <a href="#projects">Proyek</a>
+        <a href="#activities">Kegiatan</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="nav-cta">
+        <button class="btn-pink" id="loverBtn">Lover 🩷</button>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Buka menu">☰</button>
+    </nav>
+  </header>
+
+  <!-- BACKGROUND DECOR (bubbles + fish) -->
+  <div id="ocean">
+    <div class="bubble b1"></div>
+    <div class="bubble b2"></div>
+    <div class="bubble b3"></div>
+    <div class="bubble b4"></div>
+    <div class="bubble b5"></div>
+
+    <!-- fish SVG group -->
+    <div class="fish f1" aria-hidden="true">
+      <svg viewBox="0 0 64 32" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g1"><stop offset="0" stop-color="#9be7f5"/><stop offset="1" stop-color="#0e7490"/></linearGradient></defs><path d="M5 16c0-7 9-12 20-12s20 5 20 12-9 12-20 12S5 23 5 16Z" fill="url(#g1)"/><path d="M45 16l14-8v16L45 16Z" fill="#ff6fa5" opacity=".9"/></svg>
+    </div>
+    <div class="fish f2" aria-hidden="true">
+      <svg viewBox="0 0 64 32" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g2"><stop offset="0" stop-color="#ff9dc3"/><stop offset="1" stop-color="#0e7490"/></linearGradient></defs><path d="M5 16c0-7 9-12 20-12s20 5 20 12-9 12-20 12S5 23 5 16Z" fill="url(#g2)"/><path d="M45 16l14-8v16L45 16Z" fill="#ffd1e2"/></svg>
+    </div>
+    <div class="fish f3" aria-hidden="true">
+      <svg viewBox="0 0 64 32" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g3"><stop offset="0" stop-color="#ff9dc3"/><stop offset="1" stop-color="#9be7f5"/></linearGradient></defs><path d="M5 16c0-7 9-12 20-12s20 5 20 12-9 12-20 12S5 23 5 16Z" fill="url(#g3)"/><path d="M45 16l14-8v16L45 16Z" fill="#ff6fa5"/></svg>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <main id="home" class="hero">
+    <div class="hero-inner wrap">
+      <div class="hero-left">
+        <h1 class="typewriter" id="heroTitle">Hai Ovi 🩷</h1>
+        <p class="subtitle">Sebuah halaman khusus untukmu — penuh warna laut dan pink, gelembung, ikan, dan banyak cinta.</p>
+
+        <div class="meta">
+          <div><strong>Tanggal Jadian:</strong> 20 Agustus 2025</div>
+          <div><strong>Ulang Tahun:</strong> 30 Oktober 2011</div>
+        </div>
+
+        <div class="cta">
+          <a class="btn btn-primary" href="#about">Tentang Ovi</a>
+          <a class="btn btn-outline" id="openLoverCta">Buka Lover GUI</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="profile" id="profileHero" aria-hidden="false">
+          <!-- foto profil harus salah satu foto lover, tampil penuh -->
+          <img id="profileImg" src="https://files.catbox.moe/eqivzi.jpg" alt="Foto Ovi">
+          <!-- NO 'Freelance' badge as requested -->
+        </div>
+      </div>
+    </div>
+
+    <!-- waves SVG -->
+    <div class="waves" aria-hidden="true">
+      <svg viewBox="0 0 1440 180" xmlns="http://www.w3.org/2000/svg"><path fill="#0a2f49" d="M0,64L48,74.7C96,85,192,107,288,106.7C384,107,480,85,576,96C672,107,768,149,864,149.3C960,149,1056,107,1152,90.7C1248,75,1344,85,1392,90.7L1440,96L1440,180L0,180Z"/></svg>
+    </div>
+  </main>
+
+  <!-- ABOUT -->
+  <section id="about" class="section wrap">
+    <h2>Tentang Ovi</h2>
+    <p class="lead">Ovi — besti-nya banyak. Sifatnya: <strong>suka ngambek</strong>, <strong>suka galak</strong>, <strong>suka maksa</strong>. Dia juga aktif di kegiatan sekolah: mejejaitan setiap Rabu setelah pulang, dan pramuka setiap Kamis sore. Halaman ini dibuat khusus untuk Ovi — tanpa pengalaman kerja, hanya cerita dan momen.</p>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>Sifat</h3>
+        <ul>
+          <li>Suka ngambek</li>
+          <li>Suka galak</li>
+          <li>Suka maksa</li>
+          <li>Besti-nya banyak</li>
+        </ul>
+      </div>
+
+      <div class="about-card">
+        <h3>Kegiatan</h3>
+        <ul>
+          <li>Mejejaitan — setiap Rabu pulang sekolah</li>
+          <li>Pramuka — Kamis sore</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS (bisa diisi kenangan atau gambar lucu, kita buat placeholder) -->
+  <section id="projects" class="section wrap">
+    <h2>Kenangan</h2>
+    <p class="lead">Beberapa momen dan ide yang bisa ditampilkan — kamu bisa ganti foto / teks nanti.</p>
+
+    <div class="grid">
+      <article class="card">
+        <div class="thumb"><span class="chip">Moment</span></div>
+        <div class="body">
+          <h3>Momen Lucu</h3>
+          <p>Placeholder untuk foto dan cerita singkat (bisa diisi dengan foto bareng, meme, dsb.).</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><span class="chip">Hadiah</span></div>
+        <div class="body">
+          <h3>Hadiah Spesial</h3>
+          <p>Ide-ide hadiah kecil buat Ovi — catatan manis dari pacar.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="thumb"><span class="chip">Playlist</span></div>
+        <div class="body">
+          <h3>Lagu Favorit</h3>
+          <p>Daftar lagu yang selalu membuat mood Ovi naik — bisa disematkan nanti.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ACTIVITIES -->
+  <section id="activities" class="section wrap">
+    <h2>Kegiatan & Jadwal</h2>
+    <p class="lead">Ringkasan rutinitas Ovi di sekolah dan kegiatan favorit.</p>
+
+    <div class="activities-grid">
+      <div class="act-card">
+        <h4>Mejejaitan</h4>
+        <p>Setiap Rabu setelah pulang sekolah — tempat cerita & curhat</p>
+      </div>
+      <div class="act-card">
+        <h4>Pramuka</h4>
+        <p>Kamis sore — petualangan & kebersamaan</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section wrap">
+    <h2>Kontak</h2>
+    <p class="lead">Jika ada pesan manis atau kejutan untuk Ovi, tulis di sini (simulasi).</p>
+
+    <form id="contactForm" onsubmit="event.preventDefault(); alert('Pesan dikirim (simulasi).'); this.reset();">
+      <div class="form-grid">
+        <input type="text" placeholder="Nama kamu" required>
+        <input type="email" placeholder="Email (opsional)">
+      </div>
+      <textarea placeholder="Pesan untuk Ovi..." required></textarea>
+      <button class="send">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <!-- LOVER GUI POPUP (Bukan di bawah, muncul overlay) -->
+  <div id="loverOverlay" class="overlay" aria-hidden="true" tabindex="-1">
+    <div id="loverGui" class="lover">
+      <div class="lover-head" id="loverHead">
+        <div class="lover-title">Ovi 🩷</div>
+        <div class="lover-controls">
+          <button id="minimizeBtn" title="Minimize">_</button>
+          <button id="closeBtn" title="Close">×</button>
+        </div>
+      </div>
+
+      <div class="lover-content" id="loverContent">
+        <!-- main image full cover (will use object-fit:cover, but we will ensure not cropped by using contain on small screens) -->
+        <div class="lover-media" id="loverMedia">
+          <img id="loverMain" src="https://files.catbox.moe/eqivzi.jpg" alt="Ovi">
+        </div>
+
+        <div class="lover-thumbs" id="loverThumbs" aria-label="Pilih foto Ovi">
+          <button class="thumb active" data-src="https://files.catbox.moe/eqivzi.jpg"><img src="https://files.catbox.moe/eqivzi.jpg" alt="Ovi 1"></button>
+          <button class="thumb" data-src="https://files.catbox.moe/smpi9q.jpg"><img src="https://files.catbox.moe/smpi9q.jpg" alt="Ovi 2"></button>
+          <button class="thumb" data-src="https://files.catbox.moe/bs2vpp.jpg"><img src="https://files.catbox.moe/bs2vpp.jpg" alt="Ovi 3"></button>
+          <button class="thumb" data-src="https://files.catbox.moe/2p5piw.jpg"><img src="https://files.catbox.moe/2p5piw.jpg" alt="Ovi 4"></button>
+        </div>
+
+        <div class="lover-caption">
+          <div>Ovi — suka ngambek, suka galak, suka maksa. Besti banyak 🫂</div>
+          <div class="lover-meta">Jadian: 20 Aug 2025 • Ulang tahun: 30 Oct 2011</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- minimized preview in corner after minimize -->
+  <div id="loverMini" class="mini" title="Buka Ovi">
+    <img src="https://files.catbox.moe/eqivzi.jpg" alt="Ovi mini">
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div>Created with ❤ for Ovi — © <span id="year"></span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
